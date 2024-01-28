@@ -624,16 +624,7 @@ section.about .section-head {
     z-index: 10;
 }
 
-.num-count span {
-    position: absolute;
-    height: 70px;
-    width: 70px;
-    background: var(--main-yellow);
-    top: 15%;
-    z-index: 2;
-    border-radius: 50%;
-    left: 20%;
-}
+
 
 .projects-num small {
     display: inline-block;
@@ -699,12 +690,9 @@ section.about .section-head {
     color: var(--main-color);
 }
 
-.service.active span{
-   
-}
 
 .projects {
-    background: var(--main-yellow);
+    background: black;
 }
 
 .projects-wrapper h2 {
@@ -719,7 +707,7 @@ section.about .section-head {
     margin: 1rem;
 }
 
-.project-img {
+.project a {
     height: 360px;
     background-size: 115%;
     background-repeat: no-repeat;
@@ -728,8 +716,15 @@ section.about .section-head {
     transition: background 500ms;
 }
 
-.project-img:hover {
-    background-size: 125%;
+.project:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease; 
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project:hover img {
+    filter: brightness(80%); 
 }
 
 .project-desc h4 {
@@ -744,6 +739,7 @@ section.about .section-head {
     padding-bottom: .3rem;
     border-bottom: 1px solid #000;
     font-size: 1.4rem;
+    margin-top: 2rem;
 }
 
 .feedbacks {
@@ -791,7 +787,7 @@ section.about .section-head {
 }
 
 .blogs {
-    background: var(--main-dark);
+    background: black;
 }
 
 .blog-wrapper > h2 {
@@ -810,8 +806,13 @@ section.about .section-head {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-    background: #fff2c7;
+    background: white;
     padding: 1rem;
+    border-radius: 5px;
+}
+.blog:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .date {
@@ -823,13 +824,13 @@ section.about .section-head {
     height: 10px;
     width: 10px;
     display: inline-block;
-    background: #f26449;
+    background: black;
     border-radius: 100%;
     margin-right: .5rem;
 }
 
 .dot + span {
-    color: rgba(0,0,0,.6);
+    color: black;
 }
 
 .blog-desc h4 {
@@ -842,7 +843,7 @@ section.about .section-head {
     display: inline-block;
     margin-top: 1.8rem;
     font-family: 'DM Sans', sans-serif;
-    color: var(--main-color);
+    color: black;
     font-weight: 600;
     font-size: 1.1rem;
 }
