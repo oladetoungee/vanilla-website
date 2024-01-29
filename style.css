@@ -44,7 +44,9 @@ header {
 
 }
 
-
+section, footer {
+    border-top: #d89a77 solid 1px;
+}
 #menu-toggle {
     display: none;
 }
@@ -648,6 +650,7 @@ section.about .section-head {
     padding: 2.5rem 2rem;
     border-bottom: 1px solid rgba(255,255,255,0.3);
     cursor: pointer;
+    margin-top: 1rem;
 }
 
 .service.active {
@@ -663,14 +666,9 @@ section.about .section-head {
     align-items: center;
 }
 
-.service.active > div h3,
-.service.active > div h2{
-   
-}
-
 .service > div h3 {
     margin-right: 2rem;
-    color: var(--main-color);
+    color: white;
 }
 
 .service > div h2 {
@@ -687,7 +685,7 @@ section.about .section-head {
 .service span {
     transform: rotate(45deg);
     font-size: 1.7rem;
-    color: var(--main-color);
+    color: white;
 }
 
 
@@ -859,7 +857,7 @@ section.about .section-head {
 }
 
 .contact-us {
-    background: #12141d;
+    background: black;
 }
 
 .contact-wrapper {
@@ -926,7 +924,7 @@ section.about .section-head {
 }
 
 .call small, .email small {
-    font-size: .95rem;
+    font-size: .8rem;
     display: inline-block;
     margin-bottom: .5rem;
     color: var(--text-grey);
@@ -961,7 +959,7 @@ section.about .section-head {
 }
 
 footer {
-    background: var(--main-yellow);
+    background: black;
     padding: 2rem;
 }
 
