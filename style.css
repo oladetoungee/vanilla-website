@@ -1201,7 +1201,7 @@ footer {
     }
     
     .hero-img {
-        display: none;
+       max-width: 100%;
     }
     
     .sponsors {
