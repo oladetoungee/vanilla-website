@@ -335,10 +335,10 @@ section.about {
 }
 
 .about-wrapper {
-    display: grid;
+    display: flex;
     align-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 6rem;
+    justify-content: center;
+  
 }
 
 /* .exp-num {
